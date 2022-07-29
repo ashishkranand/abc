@@ -1,0 +1,803 @@
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<script src="/js/idb-keyval.min.js"></script>
+<script>
+    var __rd_url = "https://myclass.lpu.in/";
+    if (window.parent !== window) {
+        try {
+            // in iframe or frame
+            console.log(window.top.location.href); // triggers error in case of a malicious clickjacking attempt
+            if (window.parent.location.pathname === '/secure/tla/jnr.jsp') {
+                // parent is jnr
+                window.parent.location.href = window.location.href;
+            } else if (window.parent.location.pathname === '/secure/take-test1.jsp') {
+                if (window.location.pathname === '/secure/tla/lvmt.jsp' && typeof window.parent["cnarm"] === 'function') {
+                    window.parent.cnarm(false, true);
+                }
+            }
+        } catch (e) {
+            try {
+                window.top.location.href = window.location.href; // let's try to reset top, fails in html5
+            } catch (e1) {
+                window.addEventListener('load', function () {
+                    document.querySelector('body').innerHTML = '<p style="font-size: 3rem; line-height: 2; margin-top: 3rem; text-align: center"><mark>This website is maliciously trying to embed CodeTantra.com inside a frame.<br/><br/>This is likely a clickjacking attack. Please notify support@codetantra.com with a complete screenshot.</mark></p>';
+                });
+            }
+        }
+    }
+    try {
+        idbKeyval.update('ctcu', function (oldVal) {
+            var newVal = { "id" : "6107a2176cdbd8066ba2cac3", "loginId" : "12105381.st@lpu.in", "name" : "Ashish Kumar Anand", "memberId" : "12105381", "ch" : "1392", "k" : { "id" : "123", "pub" : "N1cIGMTgc4Ide8mG2jYcwSxgdzYfDExzx4WmSoZqVQE=" } };
+            return newVal;
+        });
+    } catch (ignore) {
+    }
+</script>
+
+<script src="/js/custom-min/ipc.min.js"></script>
+
+<script>
+    window.ipcN && window.ipcN.send({type: 'version'}).then(function (version) {
+        if (version !== "") {
+            window.ipcN.send({type: "update", payload: null});
+        }
+    }).catch(window.ipcW.handle);
+
+    window._ctReloadPage = function () {
+        window.location.href = window.location.href.replace(/#.*$/, '');
+    }
+</script>
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link href="/css/bootstrap-latest.css" rel="stylesheet">
+<link href="/css/label-style.css" rel="stylesheet">
+<link href="/css/custom-styles.css" rel="stylesheet">
+<link href="/css/bs-docs-side-nav.css" rel="stylesheet">
+<link href="/css/latest_header_styles.css" rel="stylesheet">
+<link href="/css/tablesorter/theme.bootstrap.css" rel="stylesheet">
+<link href="/css/jquery-ui.css" rel="stylesheet">
+<link href="/css/tablesorter/theme.jui.css" rel="stylesheet">
+<link href="/css/bootstrap-datepicker.css" rel="stylesheet">
+<link href="/css/bootstrap-slider.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/css/alertify-latest.css">
+<link type="text/css" rel="stylesheet" href="/css/select2-latest.css">
+<link type="text/css" rel="stylesheet" href="/css/dataTables.bootstrap4.css">
+<link type="text/css" rel="stylesheet" href="/css/dataTables.fixedColumns.bootstrap4.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap-switch-latest.css">
+<link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="/css/offline-theme-chrome-indicator.css">
+<link rel="stylesheet" href="/css/mathquill.min.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap4-toggle.min.css">
+
+<script src="/js/jquery-latest.js"></script>
+<script src="/js/jquery.validate-latest.js"></script>
+<script src="/js/modernizr-2.6.2.min.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
+<script src="/js/bootstrap-notify.js"></script>
+<script src="/js/jquery-ui-all.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/d3.js"></script>
+<script src="/js/function-plot.js"></script>
+
+<script src="/js/custom-min/nommoc.min.js"></script>
+
+<script src="/js/common-on-ready-js-methods.js"></script>
+<script src="/js/bootstrap-datepicker.js"></script>
+<script src="/js/search-table-row-popup.js"></script>
+<script src="/js/bootstrap-slider-latest.js"></script>
+<script src="/js/jquery.numeric.js"></script>
+<script src="/js/underscore-latest.js"></script>
+<script src="/js/hr.js"></script>
+<script src="/js/alertify-latest.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/select2-latest.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/bootstrap.touchspin.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.dataTables.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/dataTables.tableTools.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/dataTables.bootstrap4.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/bootstrap-switch-latest.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/form2object.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/gs/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/gs/circular-preloader.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/bootstrap4-toggle.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    ace.require("ace/ext/language_tools");
+</script>
+<script src="/js/mathquill.min.js"></script>
+<script>
+    MathJax = {
+        startup: {
+            typeset: false
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            macros: {
+                degree: '^\\circ'
+            }
+        },
+        svg: {
+            fontCache: 'global'
+        },
+        options: {
+            enableMenu: false
+        },
+        "HTML-CSS": {
+            linebreaks: {
+                automatic: true,
+                width: "container"
+            }
+        }
+    };
+</script>
+<script id="MathJax-script" src="/js/mjax/tex-mml-chtml.js"></script>
+
+
+
+
+<script src="/js/gs/circular-preloader.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/gs/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="/js/custom-min/lg.min.js"></script>
+
+<script>
+    var supportEmail = 'support.myclasses@lpu.co.in';
+    var supportPhone = '[ "01824-517-450"]';
+    supportPhone = JSON.parse(supportPhone);
+    var _ct_cookieId = '6107a2176cdbd8066ba2cac3';
+    var _ct_lid = '12105381.st@lpu.in';
+    var _ct_uname = "Ashish" ;
+    var _ct_groups = [ { "6107a2106cdbd8066ba2c680" : "V20D1PBAV04"} , { "6107a2106cdbd8066ba2c681" : "V20D1PBAV04-G1"} , { "611e75c4cf0b450655c86e5a" : "D2113CAP437"} , { "611e75c4cf0b450655c86e5c" : "D2113CAP444"} , { "611e75c4cf0b450655c86e5e" : "D2113CAP445"} , { "611e75c4cf0b450655c86e60" : "D2113CAP446"} , { "611e75c4cf0b450655c86e62" : "D2113CAP447"} , { "611e75c4cf0b450655c86e64" : "D2113CAP448"} , { "611e75c4cf0b450655c86e68" : "D2113CAP454"} , { "611e75c5cf0b450655c86e86" : "D2113CAP275"} , { "611e75c5cf0b450655c86e88" : "D2113CAP276"} , { "6127341397262a066efdebab" : "D2113CAP275-G2"} , { "6127341397262a066efdebac" : "D2113CAP276-G2"} , { "6127341397262a066efdebad" : "D2113CAP437-G2"} , { "6127341397262a066efdebae" : "D2113CAP444-G2"} , { "6127341397262a066efdebaf" : "D2113CAP445-G2"} , { "6127341397262a066efdebb0" : "D2113CAP446-G2"} , { "6127341397262a066efdebb1" : "D2113CAP447-G2"} , { "6127341397262a066efdebb2" : "D2113CAP448-G2"} , { "6127341397262a066efdebb3" : "D2113CAP454-G2"} , { "6127a71753bc80067a04b9c7" : "DE583PEA515"} , { "6127a71953bc80067a04bc0c" : "DE583PEA515-G2"} , { "6156ccc5f64f6b06a21417e5" : "CA21221_PEA515_03 Oct 2021_A"} , { "6166a64b13a5480696f9ffff" : "Mock Test_14 Oct 2021_D_0500"} , { "6167acac97e90a065c981e51" : "MTT21221-1_CAP275_18 Oct 2021_A_1030"} , { "616d0c275cc3590690bd871c" : "MTT21221-1_CAP437_19 Oct 2021_A_0230"} , { "616d0c275cc3590690bd871f" : "MTT21221-1_CAP444_21 Oct 2021_A_1030"} , { "616d46c6c03d74065d68dca1" : "MTT21221-1_CAP446_22 Oct 2021_A_1030"} , { "617103c828d48c067a4d93ec" : "MTT21221-1_CAP448_23 Oct 2021_A_1030"} , { "6171042e28d48c067a4db566" : "MTT21221-1_PEA515_24 Oct 2021_A_1030"} , { "619893b36beb4806941ea4e1" : "CA21221_PEA515_21 Nov 2021_A"} , { "61b43a45638ddb065bcdbdd7" : "CA21221_PEA515_12 Dec 2021_A"} , { "61c170d56b6a480a87a771eb" : "ETT21221F_CAP275_27 Dec 2021_2_0930"} , { "61c583273aab4b7e9bbd512f" : "ETT21221F_CAP437_29 Dec 2021_2_1130"} , { "61cac25542a97c06612e2af3" : "ETT21221F_CAP444_04 Jan 2022_2_1130"} , { "61d291f6e657b9065a0e7adf" : "ETT21221F_CAP448_10 Jan 2022_2_0930"} , { "61d29246e657b9065a0e9b25" : "ETT21221F_PEA515_08 Jan 2022_2_1130"} , { "61d5c0a5ab4c1549b520560d" : "DE443PEA516"} , { "61d5c0a5ab4c1549b520560e" : "DE443PEA516-G2"} , { "61d5ca36ab4c1549b521447b" : "D2113CAP757"} , { "61d5ca36ab4c1549b521447d" : "D2113CAP680"} , { "61d5ca36ab4c1549b521447f" : "D2113CAP456"} , { "61d5ca36ab4c1549b5214481" : "D2113CAP471"} , { "61d5ca36ab4c1549b5214483" : "D2113CAP756"} , { "61d5ca36ab4c1549b5214485" : "D2113CAP457"} , { "61d5ca36ab4c1549b5214487" : "D2113CAP470"} , { "61d5ca36ab4c1549b5214489" : "D2113CAP615"} , { "61d5ca36ab4c1549b521448b" : "D2113CAP770"} , { "61d5ca36ab4c1549b521448d" : "D2113MTH403"} , { "61d5ca36ab4c1549b52144bf" : "D2113CAP615-G2"} , { "61d5ca36ab4c1549b52144c0" : "D2113CAP471-G2"} , { "61d5ca36ab4c1549b52144c1" : "D2113CAP470-G2"} , { "61d5ca36ab4c1549b52144c2" : "D2113MTH403-G2"} , { "61d5ca36ab4c1549b52144c3" : "D2113CAP770-G2"} , { "61d5ca36ab4c1549b52144c4" : "D2113CAP456-G2"} , { "61d5ca36ab4c1549b52144c5" : "D2113CAP457-G2"} , { "61d5ca36ab4c1549b52144c6" : "D2113CAP756-G2"} , { "61d5ca36ab4c1549b52144c7" : "D2113CAP680-G2"} , { "61d5ca36ab4c1549b52144c8" : "D2113CAP757-G2"} , { "61d7d70db38b4e06c92b62c7" : "ETT21221F_CAP446_12 Jan 2022_2_1130"} , { "61e29ce48ce46706bbb8388d" : "TP04DSCAS85"} , { "61e29ce48ce46706bbb8388e" : "TP04DSCAS85-G1"} , { "61e29ce48ce46706bbb8388f" : "TP04DSCAS84"} , { "61e29ce48ce46706bbb83890" : "TP04DSCAS84-G1"} , { "61e29ce48ce46706bbb83891" : "TP04DSCAS86"} , { "61e29ce48ce46706bbb83892" : "TP04DSCAS86-G1"} , { "61e54a9a266f370670802987" : "TP04DSCAS87"} , { "61e54a9a266f370670802988" : "TP04DSCAS87-G1"} , { "61e54a9a266f370670802989" : "TP04DSCAS81"} , { "61e54a9a266f37067080298a" : "TP04DSCAS81-G1"} , { "6215ddb8cbf2f806cb7fd524" : "CA21222_PEA516_26 Feb 2022_A"} , { "62219c38adc88306c5b17589" : "MTT21222_MTH403_08 Mar 2022_B1_0330"} , { "6225a30eef60840699444ad3" : "MTT21222_8_MTH403_08 Mar 2022_B1_0330"} , { "6225c63e4e942b0693ad1f3b" : "MTT21222_CAP615_10 Mar 2022_D1_1130"} , { "6225c63e4e942b0693ad1f5a" : "MTT21222_CAP470_09 Mar 2022_B1_1130"} , { "6226fa9775095f06e455a0f7" : "MTT21222_9_CAP615_10 Mar 2022_D1_1130"} , { "6226fa9775095f06e455a116" : "MTT21222_9_CAP470_09 Mar 2022_B1_1130"} , { "62282b61c3210206ce09e6a3" : "MTT21222_10_CAP615_10 Mar 2022_D1_1130"} , { "6229a2d577df1809d5b8e6ae" : "MTT21222_K_CAP456_11 Mar 2022_B1_1130"} , { "622af6019013b0069a943815" : "MTT21222_2_CAP756_12 Mar 2022_B1_1130"} , { "622b2edab244a506bb37a899" : "MTT21222_PEA516_13 Mar 2022_C1_0130"} , { "6253c75009b84206b3159212" : "CA21222_PEA516_12 Apr 2022_A"} , { "62611241d5c02b0b8eb69bb5" : "IOT_21_04_2022_01"} , { "626a2e5533f0d90761f2f467" : "IOT_30_April_2022_01"} , { "626b636dc31326075546b0e1" : "CA21222_3_PEA516_01 May 2022_A"} , { "626b7608c3132607554743aa" : "CA21222_3_PEA516_1_01 May 2022_A"} , { "6272557e62c73a0741ce3b6f" : "Viva_MAY5_05-05-2022_09:00-11:00_26578"} , { "6272557e62c73a0741ce3b70" : "Viva_MAY5_05-05-2022_14:00-17:00_26557"} , { "6274a2b1a6a4fe06eff28a04" : "ETP21222FMCQ_1_CAP471_07 May 2022__1230"} , { "6278ba77f8279107430e7006" : "ETP21222FMCQ_1_CAP757_12 May 2022__0930"} , { "6278f06b8b7c870a5d92d70e" : "Viva_MAY10_10-05-2022_11:00-14:00_22189"} , { "6279f657b19bed073aad4c8e" : "ETT21222_MTH403_13 May 2022_A2_0230"} , { "627b3f5f67bc5d06f14c4d0c" : "ETP21222FMCQ_1_CAP757_2_12 May 2022__0930"} , { "627b5d0e08d4fb0743eec87b" : "ETP21222FMCQ_1_CAP757_3_12 May 2022__0930"} , { "627b643c08d4fb07431c9bfe" : "ETT21222_CAP470_16 May 2022_A2_0230"} , { "627c9552f40f55119d1a73c1" : "ETT21222_MTH403_3_13 May 2022_A2_0230"} , { "627ded71f40f55223befd2de" : "ETT21222_CAP470_3_16 May 2022_A2_0230"} , { "6281e00a8c9c0606d8def5fc" : "ETT21222_CAP615_18 May 2022_A2_0230"} , { "628323bc23504b06b1958373" : "ETT21222_CAP615_3_18 May 2022_A2_0230"} , { "6284766b8c2214074f581724" : "ETT21222_CAP456_20 May 2022_B2_1130"} , { "6285c271c0e153074aecbbaa" : "ETT21222_CAP456_2_20 May 2022_B2_1130"} , { "628715f50f8bd606d22e2e8e" : "ETT21222_PEA516_23 May 2022_A2_0930"} , { "628865d99479ae0744a9c982" : "ETT21222_PEA516_2_23 May 2022_A2_0930"} , { "628b0632896f5f06e98fe2df" : "ETT21222_CAP756_25 May 2022_D2_0930"} , { "628c583cf27e7d06a99f6871" : "ETT21222_CAP756_3_25 May 2022_D2_0930"} , { "6291fe94dade8d0723817f31" : "TS01DSCAS002"} , { "6291fe94dade8d0723817f32" : "TS01DSCAS002-G1"}];
+    var forceLocation = false;
+    var isCurrentRoleMember = true;
+    var _ct_chid = '1392';
+    var _zl_config = { }
+</script>
+
+
+<style>
+    li > a {
+        cursor: pointer;
+    }
+    .border-style {
+        line-height: 30px;
+        border: 2px solid gray;
+        padding: 2px;
+        border-radius: 4px;
+    }
+    .alertify-notifier .ajs-message {
+        width:450px;
+        color: white;
+        font-weight: bold;
+    }
+    .alertify-notifier.ajs-right .ajs-message.ajs-visible {
+        right: 450px;
+        top: 50px;
+        border-radius: 6px;
+    }
+    .alertify-notifier .ajs-message.ajs-error {
+        background: red;
+    }
+    .alertify-notifier .ajs-message.ajs-success {
+        background: rgba(92,184,17,.9);
+    }
+    .alertify-notifier .ajs-message.ajs-warning {
+        background: rgb(248, 165, 0);
+    }
+    #supportDialogBody {
+        background-color: cornsilk;
+    }
+    .select2-results__option[aria-selected="true"]{
+        display: none;
+    }
+</style>
+<script>
+    $(function () {
+        'use strict';
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+</script>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark d-block d-print-none" id='cssmenu'>
+    <button class="navbar-toggler py-0 border-0" type="button" data-toggle="offcanvas" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <span class="navbar-brand d-lg-none d-print-none"><img src="https://s3.ap-south-1.amazonaws.com/ct-client-logos/logos/lovelyprofessionaluniversity" alt="CodeTantra" style="max-width: 100%; height: 30px;" /></span>
+    <span class="d-none text-right bg-transparent"><img src="/img/logo-new.png" alt="CodeTantra" style="max-width: 100%;" /></span>
+    <div class="navbar-collapse offcanvas-collapse" id="navbarSupportedContent">
+            
+                
+<ul class="navbar-nav mr-auto">
+    <li class='d-none d-lg-block'>
+        <span class="p-1 d-block">
+             <img src="https://s3.ap-south-1.amazonaws.com/ct-client-logos/logos/lovelyprofessionaluniversity" style="height: 30px;" alt="Home">
+        </span>
+    </li>
+    <li class="nav-item"><a class="nav-link" href='/secure/home.jsp' style="white-space: nowrap"><i class="fa fa-home"></i><span> Home</span> </a></li>
+    
+    
+    <li class='nav-item dropdown'><a class="nav-link dropdown-toggle" data-toggle="dropdown" href='#' role="menu" aria-haspopup="true" title="Learn anywhere" aria-label="Learn anywhere menu"><span>Learn Anywhere</span></a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/secure/tla/m.jsp" role="menuitem" title="View meetings" aria-label="Click to view meetings">View Meetings</a></li>
+        </ul>
+    </li>
+    
+</ul>
+
+            
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> 12105381.st@lpu.in </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='/secure/member-profile.jsp'><span>Update Profile</span> </a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a class="nav-link" id="contactHelp" href='#' onclick="openSupportDialog()" role="contentinfo"><span>Support</span> </a></li>
+                <li class="nav-item"><a class="btn btn-sm btn-danger" id="logoutBtn" style="color: white; font-weight: bold; margin-top: 0.25rem; white-space: nowrap " role="button" aria-label="Logout" title="Click to logout"> Logout <i class="fa fa-sign-out" aria-hidden="true"></i> </a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+</nav>
+<script>
+    $(document).attr('cssBodyWidth', 0);
+
+    
+    $(document).ready(function() {
+        initiateSupportPanel(supportEmail, supportPhone, "<div><h5 class=\"btn btn-info\">Regular</h5><h6 class=\"text-success font-weight-bold\"><span><i class=\"fa fa-phone-square\" aria-hidden=\"true\"></i> 01824-520150 </span></h6><div><h6><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i> Visit UMS &amp; follow the path: <br>UMS Navigation &rarr; RMS &rarr; Log Request <br>(Select Category “Online Classes”)</h6></div></div><div><h5 class=\"btn btn-info\">Distance Education</h5><h6 class=\"text-success font-weight-bold\"><span><i class=\"fa fa-phone-square\" aria-hidden=\"true\"></i> 01824-521360 </span><br><span><i class=\"fa fa-phone-square\" aria-hidden=\"true\"></i> 01824-520151 </span></h6><div><h6><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i> Visit LPU e-connect &amp; follow the path: <br>RMS &rarr; Log Request <br>(Select Category “MY Class”)</h6></div></div><div><h5 class=\"btn btn-info\">Online Education</h5><h6 class=\"text-success font-weight-bold\"><span><i class=\"fa fa-phone-square\" aria-hidden=\"true\"></i> 01824-520500 </span></h6></div>");
+        if (forceLocation && !window.lgOverridden) {
+            $(".img-info").html("<b>Note</b> : You can click on the image to view a larger version.");
+            geoLocationCoordinates();
+        }
+
+        setTimeout(function(){
+            if (typeof hideTafPopup != 'undefined' && hideTafPopup) {
+                $('#tafPopupImg').addClass('hide');
+            } else {
+                $('#tafPopupImg').addClass('in');
+            }
+        }, 1000);
+        var $cssmenu = $('#cssmenu');
+        
+
+        $("#logoutBtn").click(function() {
+            logoutClicked();
+        });
+
+        $(".changeRole").click(function() {
+            changeRoleClicked(this);
+        });
+
+    });
+
+    if (alertify) {
+        alertify.set('notifier', 'position', 'top-right');
+    }
+</script>
+
+<div id="pointsModalDialog" class="modal fade" style="z-index: 1060">
+    <div class="modal-dialog">
+        <div class="modal-content hintsDialogContent1">
+            <div class="modal-header hintsDialogHeader">
+                <h5 class="hintsDialogTitle modal-title"><i class="fa fa-cubes" aria-hidden="true"></i> Award Points</h5>
+                <button type="button" class="close" onClick="closePointsDialog()" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body hintsDialogBody" id="hintsDialogBody">
+
+            </div>
+
+            <div class="modal-footer hintsDialogFooter">
+                <a type="button" class="btn btn-warning btn-sm" style='text-decoration:none !important;'  onClick="closePointsDialog()">Close</a>
+
+                <a type="button" class="btn btn-success btn-sm pull-left" style='text-decoration:none !important;'  target='_blank' href='/secure/taf.jsp'><i class="fa fa-users" aria-hidden="true"></i> Invite Friends</a>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+
+</div>
+
+<div id='supportModalDialog' class='modal fade p-0' style='z-index: 1060'>
+    <div class='modal-content border-warning'>
+        <div class='modal-header card-heading bg-warning' style='padding-bottom: 0;'>
+            <span class='w-100'>
+                <h6 class='modal-title supportDialogTitle1' id='contactLabel'><b>Contact Support</b></h6>
+            </span>
+        </div>
+        <div class='modal-body supportDialogBody text-center' id='supportDialogBody'>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="locationDenyDialog" style="margin-top: 8%">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-primary" style="padding: 10px;">
+                <h4 class="modal-title">Instruction to Unblock Access to Location.</h4>
+            </div>
+            <div class="modal-body" style="background: #fcf8e3;">
+                <div>
+                    <ul>
+                        <li><h4>The portal requires permission  to record the location from which it is being accessed, to minimize your account misuse.</h4></li>
+                        <li><h4>Currently the access to location in the browser is <span class="text-danger"><b>blocked</b></span>.</h4></li>
+                        <li><h4>Follow the instruction in the below <a href="/geolocation-settings-for-C-MF-C.html" target='_blank'>
+                            link</a> to unblock access to location details and click on
+                            <span style="color: darkgreen"><b>refresh</b></span> button.</h4></li>
+                        <li><h4>If you already followed the instructions to unblock and it is still showing this dialog, this may be due to occasional network connectivity problems. Please refresh the page in that case.</h4></li>
+                    </ul>
+
+                    <br/>
+                    <div class="text-center">
+                        <div>
+                            <a href="/geolocation-settings-for-C-MF-C.html" target='_blank'><u><h4><b>Link to Unblock</b></h4></u></a>
+                        </div>
+                        <br/>
+                    </div>
+                    <br/>
+                    <div class="text-center">
+
+                        <a id="close" onclick="_ctReloadPage()" class="btn btn-success btn-xs" data-toggle="modal" style="padding: 0 25px 0 25px;">
+                            <h5>Refresh</h5>
+                        </a>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="locationPromptDialog" style="margin-top: 8%">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-primary" style="padding: 10px;">
+                <h4 class="modal-title" id="locationFetchTitle">Fetching Location</h4>
+            </div>
+            <div class="modal-body" style="background: #fcf8e3;">
+                <div>
+                    <ul>
+                        <li><h4>The portal requires permission to record the location from which it is being accessed, to minimize your account misuse.</h4></li>
+                        <li id="changeAllowBtnResToBrowser"><h4>Click on <span class="remember-text"></span>
+                            <span><nobr><b class="allow-access-text border-style"></b></nobr></span>
+                            button to access the location, and click on <span style="color: darkgreen"><b>refresh</b></span> button.</h4>
+                        </li>
+                        <div id="showImage"></div><br/><br/>
+                        <div><h4 class="img-info"></h4></div>
+                    </ul>
+                </div>
+                <br/>
+                <div class="text-center">
+
+                    <a id="close" onclick="_ctReloadPage()" class="btn btn-success btn-xs" data-toggle="modal" style="padding: 0 25px 0 25px;">
+                        <h5>Refresh</h5>
+                    </a>
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- scripts used for screen-sharing -->
+<script src="/js/split.min.js"></script>
+<script src="/js/rtcmulticonnection/rtcmulticonnection.min.js"></script>
+<script src="/js/n/socket.io.js"></script>
+<script src="/js/rtcmulticonnection/screen-capturing.js"></script>
+<script src="/js/rtcmulticonnection/adapter-latest.js"></script>
+<style>
+	button,
+	input,
+	select {
+	    font-weight: normal;
+	    padding: 2px 4px;
+	    text-decoration: none;
+	    display: inline-block;
+	    text-shadow: none;
+	    font-size: 16px;
+	    outline: none;
+	}
+	
+	.make-center {
+	    text-align: center;
+	}
+
+	video {
+		width: 100% !important;
+	}
+
+	.onlyWebcam video {
+		width: 120% !important;
+		margin-left: 50% !important;
+	}
+
+	.videosContainer {
+		text-align: center;
+	}
+
+	.modal-title {
+		font-size: 16px;
+	}
+
+	.split {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.gutter {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+
+	.gutter.gutter-horizontal {
+		cursor: col-resize;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+	}
+
+	.gutter.gutter-vertical {
+		cursor: row-resize;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+	}
+
+	.split.split-horizontal, .gutter.gutter-horizontal {
+		float: left;
+	}
+	
+	a {
+	    text-decoration: none !important;
+	}
+	#splitContainersDivHeader {
+		z-index: 10;
+		border-radius: 5px 5px 0px 0px;
+		color: #fff;
+		padding: 0px;
+		padding-left: 5px;
+	}
+	#splitContainersDiv {
+		position: absolute;
+		z-index: 1800;
+		padding : 0;
+	}
+</style>
+<div id="containerDiv">
+	    <div class="make-center">
+		    <a id="chromeExtension" href="https://chrome.google.com/webstore/detail/codetantra-collaborative/nlmcedcocipdacdejmajkaaijoaidoef" target="_blank"></a>
+		    <!-- local/remote videos container -->
+			<div id="videos-container" class="videosContainer"></div>
+			<div class="modal fade" id="ssInstructionDialogBeforeSSInit" style="z-index: 9999;">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header btn-primary" style="padding: 10px;">
+							<h4 class="modal-title">Instructions to start Screen Sharing on CodeTantra Platform</h4>
+						</div>
+						<div class="modal-body" style="background: #fcf8e3;">
+							<div id="chrome-instructions">
+								<p style="font-size: 14px">After clicking proceed button a new tab will open.<br>
+									On the new tab choose the window you want to share in the <span style="border-style: solid; border-width: 1px; border-radius: 3px; padding: 1px 5px;">Permission</span> dialogue as shown with red border in below screen-shot and
+								click on the <span style="border-style: solid; border-width: 1px; border-radius: 3px; padding: 1px 5px;">Share</span>
+								button.</p>
+								<hr>
+								<img id="chrome-ss" src="/images/chrome-ss.png" style="width: 100%" alt="screen sharing instructions screen-shot">
+								<hr>								 
+								<span class="btn btn-success btn-play btn-lg in proceedBtn">Proceed
+									<span class="fa-stack fa-lg"><i class="fa fa-play fa-stack-1x fa-inverse"></i></span>
+								</span>
+							</div>
+							<div id="firefox-instructions">
+								<p style="font-size: 14px">CodeTantra support team is trying to help you.<br>
+								Select <span style="border-style: solid; border-width: 1px; border-radius: 3px; padding: 1px 5px; margin: 0 2px 2px">Entire Screen</span>
+									under the <b>Screen to share</b> dropdown and <br>
+								click on the <span style="border-style: solid; border-width: 1px; border-radius: 3px; padding: 1px 5px; margin: 0 2px">Allow</span>
+								button as highlighted with red border<br>
+								in the below screen-shot to start screen sharing when prompted.</p>
+								<hr>
+								<img id="firefox-ss" src="/images/firefox-ss.png" style="width: 100%" alt="screen sharing instructions screen-shot">
+								<hr>
+								<span class="btn btn-success btn-play btn-lg in proceedBtn">Proceed
+									<span class="fa-stack fa-lg"><i class="fa fa-play fa-stack-1x fa-inverse"></i></span>
+								</span>
+							</div>
+							<div style="color: grey; margin-top: 10px" id="countdown"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="ssInstructionDialogAfterSSInit">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header btn-primary" style="padding: 10px;">
+							<span style="font-size: 18px" class="modal-title">Instructions during Screen Sharing with CodeTantra Support</span>
+						</div>
+						<div class="modal-body" style="background: #fcf8e3;">
+							<div>
+								<span style="font-size: 18px">Do NOT close or refresh this tab or window! Otherwise, the Screen Sharing/Audio/Video session with CodeTantra Support team will end.<br>
+								You should now go back to the window or tab you were working previously</span><br>
+								<span style="font-size: 18px">If you want to stop sharing click the button below</span>
+								<div class="make-center"><button class="btn btn-sm btn-primary ml-4" id="stopSharingBtn" onclick="stopScreenSharingBtnClicked()">Stop Sharing</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="ssInstructionDialogForFaculty">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header btn-primary" style="padding: 10px;">
+							<span style="font-size: 18px" class="modal-title">Instructions during Screen/Audio/Video Sharing with Students</span>
+						</div>
+						<div class="modal-body" style="background: #fcf8e3;">
+							<div>
+								<span style="font-size: 18px">Do NOT close or refresh this tab or window! Otherwise, the Screen Sharing/Audio/Video session with students will end.<br>
+								You should now go back to the window or tab you were working previously</span><br>
+								<span style="font-size: 18px">If you want to stop sharing click the button below</span>
+								<div class="make-center"><button class="btn btn-sm btn-primary ml-4" id="facultyStopSharingBtn" onclick="stopScreenSharingBtnClicked()">Stop Sharing</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<form id="ssDataForm" method="post" action="/secure/screen-share-permission.jsp" target="ssPermissionWindow">
+					<input type="hidden" name="pId" id="pId" value="" />
+					<input type="hidden" name="pUserid" id="pUserid" value="" />
+					<input type="hidden" name="wId" id="wId" value="" />
+					<input type="hidden" name="wUserid" id="wUserid" value="" />
+					<input type="hidden" name="streamType" id="streamType" value="" />
+					<input type="hidden" name="groupIds" id="groupIds" value="" />
+					<input type="hidden" name="isFacultyBroadcasting" id="isFacultyBroadcasting" value=false />
+				</form>
+			</div>
+	    </div>
+</div>
+<body>
+<div id = 'splitContainersDiv' class="d-none col-8">
+	<div id="splitContainersDivHeader" class="bg-info"></div>
+	<div id="rowPropertyAddition">
+	    <div id="videoContainerOne" class="videosContainer"></div>
+		<div id="audioContainer" class="videosContainer d-none"></div>
+		<div id="videoContainerTwo" class="videosContainer"></div>
+	</div>
+</div>
+<div id="requestor-audio-container" style="display:none;">
+	<!-- local/remote audio container -->
+</div>
+</body>
+
+<script src="/js/custom-min/ss.min.js"></script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>CodeTantra Teach & Learn Anywhere
+</title>
+<style>
+    .card-img-top {
+        height: 20vh;
+    }
+
+    #homeCenterDiv .card .btn {
+        background-color: #2C3E50 !important;
+        border-color: #2C3E50 !important;
+    }
+
+    #homeCenterDiv .card {
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .08);
+        transition: all 0.3s ease-in-out;
+    }
+
+    #homeCenterDiv .card:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #57e2b2;
+        transition: 0.5s;
+    }
+
+    #homeCenterDiv .card:hover, #homeCenterDiv .card:active {
+        transform: scale(1.05);
+        box-shadow: 0 20px 35px 0 rgba(0, 0, 0, .08);
+    }
+
+    #homeCenterDiv .card:hover:after, #homeCenterDiv .card:active:after {
+        width: 100%;
+    }
+
+    #homeCenterDiv .stretched-link {
+        border-radius: 0 0 0.25rem 0.25rem;
+    }
+
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+</style>
+</head>
+<body>
+<div id="containerDiv">
+    <div class="container" style="min-width: 100%;">
+        <div id="centerContentDiv" class="col-lg-12 justify-content-center align-items-center">
+            <div id="homeCenterDiv" class="col-12 col-lg-10 col-xl-8 mx-auto">
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    
+                    <div class="col my-2 my-md-3 my-lg-4">
+                        <div class="card h-100">
+                            <img src="/images/i/undraw_group_video_without_border.svg" alt="Meetings & Recordings"
+                                 class="card-img-top">
+                            <div class="card-body d-none d-md-block text-center">
+                                <p class="card-text ">Click here to join or view all your live and recorded
+                                    classes/meetings</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="/secure/tla/m.jsp" data-toggle="tooltip"
+                                   class="btn stretched-link text-white w-100" title="Click here to view Meetings"
+                                   aria-label="View Classes and Meetings" role="button">View Classes/Meetings</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col my-2 my-md-3 my-lg-4">
+                        <div class="card h-100">
+                            <img src="/images/i/undraw_web_developer_p3e5.svg" alt="Courses" class="card-img-top">
+                            <div class="card-body d-none d-md-block text-center">
+                                <p class="card-text ">Click here to view all your courses/subjects</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="home/courses.jsp" data-toggle="tooltip"
+                                   class="btn stretched-link text-white w-100" title="Click here to view Courses"
+                                   aria-label="View Courses" role="button">Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2 my-md-3 my-lg-4">
+                        <div class="card h-100">
+                            <img src="/images/i/undraw_exams_g4ow.svg" alt="Tests" class="card-img-top">
+                            <div class="card-body d-none d-md-block text-center">
+                                <p class="card-text ">Click here to view all your scheduled and completed tests</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="/secure/tests/ti.jsp" data-toggle="tooltip"
+                                   class="btn stretched-link text-white w-100" title="Click here to view Tests"
+                                   aria-label="View Tests" role="button">Tests</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2 my-md-3 my-lg-4">
+                        <div class="card h-100">
+                            <img src="/images/i/undraw_dev_focus_b9xo.svg" alt="Programming Labs" class="card-img-top">
+                            <div class="card-body d-none d-md-block text-center">
+                                <p class="card-text ">Click here to view all your programming labs</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="home/labs.jsp" data-toggle="tooltip"
+                                   class="btn stretched-link text-white w-100" title="Click here to view Labs"
+                                   aria-label="View Labs" role="button">Programming Labs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2 my-md-3 my-lg-4">
+                        <div class="card h-100">
+                            <img src="/images/i/undraw_Devices_re_dxae.svg" alt="Tools" class="card-img-top">
+                            <div class="card-body d-none d-md-block text-center">
+                                <p class="card-text ">Click here to access tools.</p>
+                            </div>
+                            <div class="card-footer p-0">
+                                <a href="/secure/tools.jsp" data-toggle="tooltip"
+                                   class="btn stretched-link text-white w-100" title="Click here to access tools"
+                                   aria-label="View tools" role="button">Tools</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <style>
+    html {
+        position: relative;
+        min-height: calc(100vh - 50px);
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        padding-top: 10px;
+        left: 0;
+    }
+</style>
+<div class="footer">
+    <div id="pageFooterDiv" class=" my-round-border4">
+        <div style="padding: 12px">
+            <div class="" id="logo" style="text-align: center;">&#169;
+                
+                <span id="ct-oss" class="d-none hide"> | Use of <a href="/secure/oss.jsp" target="_blank">Open Source Software</a></span>
+                <script>
+                    window['showOss'] && $('#ct-oss').removeClass('d-none hide');
+                    window.ipcN && window.ipcN.send({type: 'is-n'}).then(function(res) {
+                        if (res.v) {
+                            $("#logo").html('<img src="/img/logo-black-text.png" style="height: 2.25em"/>')
+                            // $('#pageFooterDiv').parent().addClass('hide d-none');
+                        }
+                    }).catch(window.ipcW.handle)
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(function () {
+        try {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-21208757-1', 'auto');
+            ga('send', 'pageview');
+        } catch (ignored) {}
+    }, 30);
+</script>
+    </div>
+</div>
+
+<script src="/js/luxon.js"></script>
+
+<script src="/js/custom-min/nommoc.min.js"></script>
+<script type="text/javascript" src="/js/custom-min/mutils.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        if (!isClientTimeValid(1659078050389)) {
+            sTime(function (serverTime) {
+                if (serverTime && !isNaN(serverTime) && !isClientTimeValid(+serverTime)) {
+                    showTimeError(+serverTime, "close");
+                    // TODO handle this properly
+                    window.ipcN.send({type: 'time-error', payload: null});
+                }
+            });
+        }
+        window.ipcN.send({
+            type: 'home',
+            payload: {by: "12105381.st@lpu.in"}
+        }).then(window.ipcW.handle).catch(window.ipcW.handle);
+    });
+</script>
+</body>
+</html>
