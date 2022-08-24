@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Radio button
+        </title>
+    </head>
+    <body style="margin: 0;padding: 0;">
+        <form style="background-color: rgb(172, 239, 150); display: inline-block; padding: 15px;margin-left: 40%; margin-top: 10%; border-radius: 10px;border: 4px solid black;">
+            <h3 style="color: red;"><u> Name:</u></h3>
+            <input type="text" name="name" id="name" placeholder="Enter your name" style="width: 18x0px;height: 25px; border-radius: 5xpx; padding: 5px; font-size: 18px;">
+        <h3 style="color: red;"><u> Gender:</u></h3>
+        <label for="radio">Male</label>
+        <input type="radio" name="first radio button"autofocus>
+        <label for="radio">Female</label>
+        <input type="radio" checked  name="second radio button">
+        <label for="radio">other</label>
+        <input type="radio" checked  name="second radio button">
+        <h3 style="color: red;"><u> Country:</u></h3>
+        <label for="radio">India</label>
+        <input type="radio" name="first radio button"autofocus>
+        <label for="radio">International</label>
+        <input type="radio" checked  name="second radio button"><br>
+        <label for="radio">click here to goto Lpu main page</label>
+        <input type="image" src="../first/lpu.png" alt="Lpu"height="40px"><br>
+        <button id="submit" type="submit" onclick="alertopen()" style="margin-top: 10px; background-color: rgb(231, 45, 45); color: whitesmoke; padding: 10px; font-size: larger; border-radius: 10px; cursor: pointer;">Submit</button>
+    </form>
+    <script>
+        function alertopen(){
+            window.alert("Your record saved successfully !!!");
+        }
+    </script>
+    </body>
+</html>
